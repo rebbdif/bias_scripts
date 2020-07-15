@@ -6,4 +6,4 @@ RUN pip install pandas
 COPY ./ /app
 WORKDIR /app
 
-CMD ["python ./file_parser.py]
+CMD python /app/file_parser.py
