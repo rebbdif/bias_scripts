@@ -1,5 +1,9 @@
 FROM python:3
-WORKDIR /scripts
-
 COPY . .
-CMD ["pip install pandas"]
+
+RUN pip install pandas
+
+COPY ./ /app
+WORKDIR /app
+
+CMD ["python ./file_parser.py]
